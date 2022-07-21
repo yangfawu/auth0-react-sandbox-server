@@ -1,6 +1,9 @@
 import axios from "axios";
 import { auth, claimIncludes } from "express-oauth2-jwt-bearer";
 import { Request } from "express";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const NAMESPACE = `https://SOME-UNIQUE-NAMESPACE-FOR-CUSTOM-CLAIM.com`;
 

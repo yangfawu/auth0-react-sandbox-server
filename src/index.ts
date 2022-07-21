@@ -8,7 +8,7 @@ import { json } from "body-parser";
 dotenv.config();
 
 const app: Express = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8080;
 
 app.use(json());
 
